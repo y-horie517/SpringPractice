@@ -1,0 +1,25 @@
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.stereotype.Controller;
+//import org.springframework.web.bind.annotation.RestController;
+
+//@RestControllerを記述することで、このクラスがWEBアプリケーションとして
+//操作できるコントローラプログラムとして動作できるようになります。
+//@RestController
+@Controller
+public class DemoController {
+//	@RequestMappingは、リクエストを受けたときの処理を記述します。
+//	このプログラムの場合、"/"（ルート）にアクセスが来た場合の処理です。
+	@RequestMapping("/")
+	public String index() {
+		return "index";
+	}
+	String home() {
+		return "Hello World2!";
+	}
+//	@RequestMapping("/user")
+//	String user() {
+//		return "Welcome user!";
+//	}
+}

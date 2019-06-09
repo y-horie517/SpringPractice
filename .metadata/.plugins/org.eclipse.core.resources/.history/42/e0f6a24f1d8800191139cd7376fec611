@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+<h1>Demo Page</h1>
+<p th:text="${msg}"></p>
+<!-- 変数名にはコントローラで指定したModelのaddAttributeで指定した名前を指定
+することで、コントローラーで指定した値をビューに埋め込むことができます。 -->
+
+</body>
+</html>

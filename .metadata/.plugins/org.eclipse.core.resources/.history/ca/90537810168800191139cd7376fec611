@@ -1,0 +1,21 @@
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+
+//@SpringBootApplicationアノテーションを記述することで
+//特別な設定ファイルを用意しなくても、プログラムはSpringBootとして実行可能になります。
+@SpringBootApplication
+//@RestControllerを記述することで、このクラスがWEBアプリケーションとして
+//操作できるコントローラプログラムとして動作できるようになります。
+@RestController
+public class DemoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DemoApplication.class, args);
+	}
+
+}
